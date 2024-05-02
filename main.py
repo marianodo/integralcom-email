@@ -38,7 +38,7 @@ if __name__ == '__main__':
                              sett['password'],
                              sett['server'],
                              sett['port']) for sett in settings]
-
+    print(accounts)
     db = Database(DB_USER,
                   DB_PASSWORD,
                   DB_HOST,
