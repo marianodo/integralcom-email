@@ -1,8 +1,14 @@
 [
     {
-        "email": "",
-        "password": "",
-        "server" : "",
-        "port" : 0
+        "email": "integralcomcomunicaciones@gmail.com",
+        "password": "qsszjtoqdhldcapk",
+        "server" : "smtp.gmail.com",
+        "port" : 587
+    },
+    {
+        "email": "integralcomremoto@gmail.com",
+        "password": "dexohzbzvipndkan",
+        "server" : "smtp.gmail.com",
+        "port" : 587
     }
 ]

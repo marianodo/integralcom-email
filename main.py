@@ -5,7 +5,7 @@ from db import Database
 import time
 import os
 
-ACCOUNT_SETTINGS = "account_settings.json"
+ACCOUNT_SETTINGS = "/data/account_settings.json"
 
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
