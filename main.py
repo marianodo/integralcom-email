@@ -1,4 +1,5 @@
 import json
+import traceback
 from time import gmtime, strftime
 from email_wrapper import EmailAccount
 from db import Database
@@ -28,6 +29,10 @@ def send_message(accounts, email, message):
                 print(f"Sent to {email} message {message}")
                 return True
         except Exception as e:
+            traceback.print_exc()  # Imprime el traceback completo
+            # También puedes capturar el traceback en una variable si necesitas procesarlo:
+            error_details = traceback.format_exc()
+            print("\nDetalles del error capturados:\n", error_details)
             print(f"Error: {e}")
     return False
 
