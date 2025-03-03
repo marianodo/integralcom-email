@@ -1,3 +1,4 @@
+import mysql.connector as MySQLdb
 # Queries
 GET_UNSENT = "SELECT * FROM mensaje_a_python_email WHERE men_status = 0"
 MARK_AS_SENT = "UPDATE mensaje_a_python_email SET men_status = 1 WHERE id = {0}"

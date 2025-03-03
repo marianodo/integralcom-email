@@ -2,7 +2,6 @@ import json
 import traceback
 from time import sleep
 import os
-import mysql.connector as MySQLdb
 from db import Database
 # Configuración de entorno y paths
 ACCOUNT_SETTINGS = "/data/account_settings.json"
