@@ -11,6 +11,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = int(os.getenv("DB_PORT", "3306"))  # Por seguridad lo casteo a int
 DB_DATABASE = os.getenv("DB_DATABASE")
+SLEEP = int(os.getenv("SLEEP", "60"))
 
 
 def load_settings(file):
@@ -81,4 +82,4 @@ if __name__ == '__main__':
             print(f"Error en el ciclo principal: {e}")
             traceback.print_exc()
 
-        sleep(60)  # Pausa de 1 minuto entre iteraciones
+        sleep(SLEEP)  # Pausa de 1 minuto entre iteraciones
