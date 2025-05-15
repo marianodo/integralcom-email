@@ -1,8 +1,8 @@
 [
     {
-        "email": "",
-        "password": "",
-        "server" : "",
-        "port" : 0
+        "email":"",
+        "password":"",
+        "server" :"",
+        "port" :""
     }
 ]
