@@ -238,7 +238,6 @@ if __name__ == '__main__':
             db.close()
             
             # Actualiza el timestamp de última ejecución exitosa
-            global LAST_SUCCESSFUL_RUN  # Declaramos global justo antes de usar
             LAST_SUCCESSFUL_RUN = datetime.now()
             consecutive_errors = 0  # Reiniciar contador de errores
             
