@@ -195,7 +195,7 @@ if __name__ == '__main__':
             db.open()
 
             # Limitar la cantidad de mensajes a procesar por ciclo
-            messages = db.get_unsent(limit=50)  # Asumimos que get_unsent acepta un parámetro limit
+            messages = db.get_unsent()  # Asumimos que get_unsent acepta un parámetro limit
             
             if not messages:
                 logger.info("No hay mensajes nuevos para enviar")
